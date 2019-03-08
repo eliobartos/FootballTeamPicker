@@ -1,0 +1,30 @@
+.panel_background {
+   background-color: rgb(200, 206, 209);
+   background-color: rgba(200, 206, 209, 0.8);
+   border-radius: 15px;
+   margin-left: 20px;
+   border-style: solid;
+   border-color: black;
+   border-width: 5px;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.outline { 
+   padding: 10px 20px 20px 20px;
+}
+
+.table_padding {
+  padding-left: 70px;
+}
+
+#best_teams {
+  display: table;
+  margin: 0 auto;
+}
+body {
+  background-image: url(grass.png);
+  background-color: #ddf5ff;
+}
