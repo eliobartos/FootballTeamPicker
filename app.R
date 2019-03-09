@@ -58,7 +58,7 @@ server <- function(input, output) {
     players_data = players_database %>% 
       filter(name %in% input$players_coming)
 
-    out = simulate_teams(players_data, n_sim = 500)
+    out = simulate_teams(players_data, n_sim = 600)
 
     team_1 = out$team_1[,"name"]
     colnames(team_1) = c("Team 1")

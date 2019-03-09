@@ -2,8 +2,8 @@ library(dplyr)
 
 players_database = tribble(
   ~name, ~skill,
-  "Gazi",	3.5,
-  "F. Gazi",	1.3,
+  "Gazi M.",	3.5,
+  "Gazi F.",	1.3,
   "Lipi",	2.8,
   "Knez",	2.2,
   "Perks",	1,
@@ -13,13 +13,17 @@ players_database = tribble(
   "Ante",	2.2,
   "Cos",	3.5,
   "Luco",	3.3,
-  "Nikola (Antin)",	5,
   "Krolo", 1.8,
   "Sonjic", 4,
   "Bacva", 2.8,
   "Primer", 2.8,
-  "Miha", 1.8
-)
+  "Miha", 1.8,
+  "Frend, ko Nikola", 5,
+  "Frend, dost dobar", 3.5,
+  "Frend, ok", 2.2,
+  "Frend, al los", 1
+) %>% 
+  arrange(name)
 
 
 calculate_teams = function(players_data) {
