@@ -41,9 +41,6 @@ ui <- fluidPage(class = "content",
       
     )
   )
- 
-    
-  
 )
 
 

@@ -1,30 +1,6 @@
 library(dplyr)
 
-players_database = tribble(
-  ~name, ~skill,
-  "Gazi M.",	3.5,
-  "Gazi F.",	1.3,
-  "Lipi",	2.8,
-  "Knez",	2.2,
-  "Perks",	1,
-  "Bora",	1,
-  "Gogo",	1,
-  "Elio",	3.5,
-  "Ante",	2.2,
-  "Cos",	3.5,
-  "Luco",	3.3,
-  "Krolo", 1.8,
-  "Sonjic", 4,
-  "Bacva", 2.8,
-  "Primer", 2.8,
-  "Miha", 1.8,
-  "Frend, ko Nikola", 5,
-  "Frend, dost dobar", 3.5,
-  "Frend, ok", 2.2,
-  "Frend, al los", 1
-) %>% 
-  arrange(name)
-
+load("players_database.RData")
 
 calculate_teams = function(players_data) {
   # Calculates one possible team split from players data
