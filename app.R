@@ -4,25 +4,8 @@ library(shiny)
 library(shinyjs)
 source("Functions.R")
 
-# CSS
-# css <- 
-#   tags$head(tags$style(HTML("
-#                            .outline { 
-#                           
-#                            margin-left: 20px;
-#                            padding-left: 20px;
-#                            padding-bottom: 20px;
-#                            }
-#                            .center_div {
-#                            padding-left: 40px;
-#                            padding-top: 10px;
-#                            }
-#                            ")) 
-#   )
-
-
 # Define UI for miles per gallon app ----
-ui <- fluidPage(
+ui <- fluidPage(class = "content",
   
   useShinyjs(),
   
@@ -35,7 +18,7 @@ ui <- fluidPage(
   ),
   
   fluidRow(
-    column(width = 2,
+    column(width = 6,
       tags$div(class = 'panel_background outline',
                checkboxGroupInput("players_coming", label = h3("Tko dolazi?"), 
                                   choices = players_names_to_list(players_database),
@@ -44,7 +27,7 @@ ui <- fluidPage(
                
       )
     ),
-    column(width = 3,
+    column(width = 6,
       
         fluidRow(class = "panel_background center_text outline",
           tags$h3(
